@@ -18,7 +18,7 @@ function BuyAndSneaker({ product, buyQuantity }) {
   return (
     <div className='flex flex-col justify-center items-center gap-10 mt-10'>
       
-      <div className='w-full flex justify-center items-center gap-[200px]   lg:flex lg:flex-col'>
+      <div className='w-full flex justify-center items-center gap-[200px]'>
         <div className='w-[50%] flex flex-col justify-center items-center gap-10'>
           <h2 className='font-bold text-2xl'>You are going to buy</h2>
           <button className='bg-black text-white px-5 py-3 rounded-md text-2xl hover:bg-white hover:border border-black hover:text-black'>
@@ -29,7 +29,7 @@ function BuyAndSneaker({ product, buyQuantity }) {
         <div className='w-[50%] flex flex-col justify-center items-center gap-5'>
           <img
             src={product.image}
-            className='w-[100%] h-44 rounded-md shadow-2xl'
+            className='w-full h-44 rounded-md shadow-2xl'
             alt='Sneaker'
           />
           <p>{product.name}</p>
